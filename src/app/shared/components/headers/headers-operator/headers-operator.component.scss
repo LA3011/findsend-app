@@ -1,0 +1,23 @@
+.padding-10 {
+    padding: 10px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.img-profile {
+    height: 50px;
+    width: 50px;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-notify{
+    color: white !important;
+}

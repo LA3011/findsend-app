@@ -1,20 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="content-page" [fullscreen]="true">
+ 
+  <div class="margin-5 margin-top-20">
+    <app-header-operator/>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Page Order</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="padding-5">
+    <ion-text color="dark">
+      <h1 class="title-primary-bold">Cuenta</h1>
+    </ion-text>
+  </div>
 
-  <p>
-    Home
-  </p>
+
+  <div class="padding-5">
+    <ion-text color="medium">
+      <h1 class="title-secundary-bold">Sucursales</h1>
+    </ion-text>
+    <app-branchs-operator/>
+  </div>
 
 </ion-content>

@@ -1,0 +1,75 @@
+h3,
+h2,
+h1 {
+    margin: 0;
+}
+
+.title-card{
+    font-weight: 800;
+}
+
+.money {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.money-description {
+    font-size: large;
+}
+
+.money-balance {
+    color: green;
+}
+
+.center {
+    text-align: center;
+    padding: 0;
+}
+
+ion-card-title {
+    font-weight: bold;
+}
+
+.money-icon-usd {
+    font-size: xx-large;
+}
+
+.content-scroll-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-acount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content {
+    height: 280px;
+    width: 260px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.money-description{
+    color: grey;
+}
+
+.chevron-forward {
+    font-size: 28px;
+    cursor: pointer;
+}
