@@ -4,21 +4,22 @@
   <ion-icon class="chevron-forward" name="chevron-back-outline" (click)="scrollLeft(carousel)"></ion-icon>
 
   <!-- Contenedor scroll -->
-  <div class="content-scroll-horizontal" #carousel>
+  <div class="content-scroll-horizontal" #carousel (scroll)="onScroll(carousel)">
 
     <ion-card class="card-content">
       <ion-card-header>
         <ion-card-title class="center">
-          <h3 class="title-card">Sucursal TL-01</h3>
+          <h3 class="title-card">Principal TL-01</h3>
         </ion-card-title>
       </ion-card-header>
       <ion-card-content>
 
         <div class="content-img">
           <ion-avatar style="width: auto; height: auto;">
-            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-maracay-test.jpeg" style="width: 90px; height: 90px;"/>
+            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-maracay-test.jpeg"
+              style="width: 90px; height: 90px;" />
           </ion-avatar>
-        </div>              
+        </div>
 
         <ion-text class="money-balance">Balance:</ion-text>
         <div class="content-acount">
@@ -26,7 +27,7 @@
           <ion-icon class="money-icon-usd" color="success" name="logo-usd"></ion-icon>
         </div>
 
-        <ion-item lines="none">
+        <ion-item >
           <ion-text color="medium" class="money-description">Aragua-Maracay</ion-text>
         </ion-item>
 
@@ -43,16 +44,18 @@
 
         <div class="content-img">
           <ion-avatar style="width: auto; height: auto;">
-            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-chacao-test.jpeg" style="width: 90px; height: 90px;"/>
+            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-chacao-test.jpeg"
+              style="width: 90px; height: 90px;" />
           </ion-avatar>
-        </div>              
+        </div>
 
+        <ion-text class="money-balance">Balance:</ion-text>
         <div class="content-acount">
-          <ion-text class="money">12.50</ion-text>
+          <ion-text class="money">2100.00</ion-text>
           <ion-icon class="money-icon-usd" color="success" name="logo-usd"></ion-icon>
         </div>
 
-        <ion-item class="center" lines="none">
+        <ion-item >
           <ion-text color="medium" class="money-description">Caracas-Chacao</ion-text>
         </ion-item>
 
@@ -69,17 +72,19 @@
 
         <div class="content-img">
           <ion-avatar style="width: auto; height: auto;">
-            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-guaira-test.jpeg" style="width: 90px; height: 90px;"/>
+            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-coro-test.jpeg"
+              style="width: 90px; height: 90px;" />
           </ion-avatar>
-        </div>              
+        </div>
 
+        <ion-text class="money-balance">Balance:</ion-text>
         <div class="content-acount">
-          <ion-text class="money">150.00</ion-text>
+          <ion-text class="money">1500.00</ion-text>
           <ion-icon class="money-icon-usd" color="success" name="logo-usd"></ion-icon>
         </div>
 
-        <ion-item class="center" lines="none">
-          <ion-text color="medium" class="money-description">Zulia-Guaira</ion-text>
+        <ion-item >
+          <ion-text color="medium" class="money-description">Falcon-Coro</ion-text>
         </ion-item>
 
       </ion-card-content>
@@ -95,17 +100,19 @@
 
         <div class="content-img">
           <ion-avatar style="width: auto; height: auto;">
-            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-coro-test.jpeg" style="width: 90px; height: 90px;"/>
+            <img class="img-perfil-sucursal" alt="perfil" src="./../../../../assets/testing/photo-guaira-test.jpeg"
+              style="width: 90px; height: 90px;" />
           </ion-avatar>
-        </div>              
+        </div>
 
+        <ion-text class="money-balance">Balance:</ion-text>
         <div class="content-acount">
-          <ion-text class="money">1150.00</ion-text>
+          <ion-text class="money">1500.00</ion-text>
           <ion-icon class="money-icon-usd" color="success" name="logo-usd"></ion-icon>
         </div>
 
-        <ion-item class="center" lines="none">
-          <ion-text color="medium" class="money-description">Falcon-Coro</ion-text>
+        <ion-item >
+          <ion-text color="medium" class="money-description">Guaira-Zulia</ion-text>
         </ion-item>
 
       </ion-card-content>
@@ -116,4 +123,11 @@
   <!-- Flecha derecha -->
   <ion-icon class="chevron-forward" name="chevron-forward-outline" (click)="scrollRight(carousel)"></ion-icon>
 
+</div>
+
+<!-- Indicadores -->
+<div class="dots-container">
+  @for (s of sucursales; let i = $index; track $index) {
+  <div class="dot" [class.active]="i === currentIndex"></div>
+  }
 </div>

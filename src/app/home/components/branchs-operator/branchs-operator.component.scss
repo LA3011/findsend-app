@@ -4,7 +4,7 @@ h1 {
     margin: 0;
 }
 
-.title-card{
+.title-card {
     font-weight: 800;
 }
 
@@ -57,7 +57,7 @@ ion-card-title {
 }
 
 .card-content {
-    height: 280px;
+    height: 290px;
     width: 260px;
     flex-shrink: 0;
     scroll-snap-align: start;
@@ -65,11 +65,31 @@ ion-card-title {
     border-radius: 12px;
 }
 
-.money-description{
+.money-description {
     color: grey;
 }
 
 .chevron-forward {
     font-size: 28px;
     cursor: pointer;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background: #ccc;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: #3880ff;
+    transform: scale(1.3);
 }

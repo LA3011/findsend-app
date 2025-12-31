@@ -4,7 +4,6 @@ import { addIcons } from 'ionicons';
 import { chevronBackOutline, chevronForwardOutline, logoUsd } from 'ionicons/icons';
 import { IonCard, IonCardContent, IonCardHeader, IonCardTitle } from '@ionic/angular/standalone';
 
-
 @Component({
   selector: 'app-branchs-operator',
   templateUrl: './branchs-operator.component.html',
@@ -14,12 +13,22 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardTitle } from '@ionic/ang
   imports: [IonAvatar, IonCard, IonCardContent, IonCardHeader, IonCardTitle]
 })
 export class BranchsOperatorComponent  implements OnInit {
+  
+  sucursales = [1, 2, 3, 4];
+  currentIndex = 0;
 
   constructor() {
     addIcons({ logoUsd, chevronForwardOutline, chevronBackOutline })
   }
 
   ngOnInit() {}
+
+  onScroll(carousel: HTMLElement) {
+    const cardWidth = 240 + 12; // ancho + gap
+    const scrollLeft = carousel.scrollLeft;
+
+    this.currentIndex = Math.round(scrollLeft / cardWidth);
+  }
 
   scrollLeft(carousel: HTMLElement) {
     carousel.scrollBy({

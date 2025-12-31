@@ -11,13 +11,22 @@
     width: 50px;
 }
 
-.content-header{
+.content-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 12px;
 }
 
-.icon-notify{
+.icon-notify {
     color: white !important;
+}
+
+.pin-notify {
+    position: absolute;
+    z-index: 10;
+}
+
+.number-pin-notify {
+    color: white;
 }
