@@ -3,34 +3,17 @@ import { TabsPage } from './tabs.page';
 
 export const routes: Routes = [
   {
-    path: 'tabs',
+    path: 'findsend',
     component: TabsPage,
     children: [
-      {
-        path: 'tab1',
-        loadComponent: () =>
-          import('../tab1/tab1.page').then((m) => m.Tab1Page),
-      },
-      {
-        path: 'tab2',
-        loadComponent: () =>
-          import('../tab2/tab2.page').then((m) => m.Tab2Page),
-      },
-      {
-        path: 'tab3',
-        loadComponent: () =>
-          import('../tab3/tab3.page').then((m) => m.Tab3Page),
-      },
-      {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full',
-      },
+      { path: 'home', loadComponent: () =>   import('../home/home.page').then((m) => m.HomePage),},
+      { path: 'perfil', loadComponent: () =>   import('../perfil/perfil.page').then((m) => m.PerfilPage),},
+      { path: 'order', loadComponent: () =>   import('../order/order.component').then((m) => m.OrderPage),},
+      { path: 'config', loadComponent: () =>   import('../config/config.page').then((m) => m.ConfigPage),},
+      { path: '', redirectTo: '/findsend/home', pathMatch: 'full', },
     ],
   },
-  {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full',
-  },
+
+  { path: '', redirectTo: '/findsend/home', pathMatch: 'full', },
+  
 ];
