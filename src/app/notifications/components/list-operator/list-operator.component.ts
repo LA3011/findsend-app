@@ -1,6 +1,8 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, ViewChild } from '@angular/core';
-import { IonCard, IonCardContent, IonItem, IonLabel, IonAvatar } from '@ionic/angular/standalone';
+import { IonCard, IonCardContent, IonItem, IonLabel, IonAvatar, IonSearchbar } from '@ionic/angular/standalone';
 import { IonButton, IonButtons, IonContent, IonHeader, IonModal, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { search } from 'ionicons/icons';
 
 @Component({
   selector: 'app-list-operator',
@@ -8,7 +10,7 @@ import { IonButton, IonButtons, IonContent, IonHeader, IonModal, IonTitle, IonTo
   styleUrls: ['./list-operator.component.scss'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   standalone: true,
-  imports: [ IonCard, IonCardContent, IonItem, IonLabel, IonAvatar, IonAvatar, IonButton, IonContent, IonModal]
+  imports: [ IonSearchbar, IonCard, IonCardContent, IonItem, IonLabel, IonAvatar, IonAvatar, IonButton, IonContent, IonModal]
 
 })
 export class ListOperatorComponent  implements OnInit {
@@ -16,7 +18,9 @@ export class ListOperatorComponent  implements OnInit {
   @ViewChild('modal') modal!: IonModal;
   selectedItem: any = null; 
 
-  constructor() { }
+  constructor() { 
+    addIcons({ search })
+  }
 
   ngOnInit() {}
 

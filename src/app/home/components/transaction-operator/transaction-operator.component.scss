@@ -1,11 +1,14 @@
+ion-item{
+    padding: 5px;
+}
+
 .profile-transaction {
     margin-right: 15px;
-    margin-left: 10px;
 }
 
 .item-transaction {
-    margin-right: 5%;
-    
+    // margin-right: 5%;
+    margin-top: 3px;
 }
 
 .item-label-description {
@@ -22,7 +25,7 @@
 
 .right-content {
     color: #666;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 .item-label-more {

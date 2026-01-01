@@ -4,12 +4,12 @@
     <img class="img-profile" alt="profile-img" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
   </ion-avatar>
 
-  <div>
-    <ion-badge class="pin-notify" color="danger" slot="start">
+  <div class="notifications">
+    <ion-badge mode="ios" class="pin-notify" color="danger" slot="start">
       <span class="number-pin-notify">5</span>
     </ion-badge>
-    <ion-button shape="round" color="primary" routerLink="/findsend/notifications">
-      <ion-icon class="icon-notify" slot="icon-only" name="notifications-outline"></ion-icon>
+    <ion-button fill="clear" shape="round" routerLink="/findsend/notifications">
+      <ion-icon color="warning" class="icon-notify" slot="icon-only" name="notifications-outline"></ion-icon>
     </ion-button>
   </div>
 

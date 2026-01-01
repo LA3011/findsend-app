@@ -1,5 +1,7 @@
 <div #page>
 
+  <ion-searchbar mode="ios" animated="true" placeholder=" Buscar" show-cancel-button="never"></ion-searchbar>
+
   @for (item of [1,2,3,4,5,6]; track $index) {
     <div class="ion-activatable ripple-parent rounded-rectangle">
       <ion-card class="card-contr item-transaction" (click)="openModal(item)">
@@ -31,7 +33,7 @@
   }
 
   <!-- MODAL -->
-  <ion-modal style="--border-radius: 10px;" #modal [canDismiss]="canDismiss" [presentingElement]="page">
+  <ion-modal mode="ios" style="--border-radius: 10px;" #modal [canDismiss]="canDismiss" [presentingElement]="page">
     <ng-template>
       
       <ion-item color="primary">
