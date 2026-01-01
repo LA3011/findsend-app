@@ -1,0 +1,54 @@
+ion-modal {
+    padding: 5%;
+    padding-top: 10%;
+}
+
+ion-card-content {
+    padding: 0;
+}
+
+ion-list {
+    padding: 0;
+}
+
+.title-primary-bold {
+    margin: 0;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.card-contr {
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.label-notify {
+    font-size: small;
+}
+
+.item-label-description {
+    color: green !important;
+    font-weight: bold;
+}
+
+.right-content {
+    color: #666;
+    font-size: 14px;
+}
+
+.money-debito {
+    color: red !important;
+}
+
+.label-details {
+    color: aliceblue;
+    font-weight: bold;
+}
