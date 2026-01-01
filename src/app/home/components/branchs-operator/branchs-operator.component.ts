@@ -3,6 +3,7 @@ import { IonAvatar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { chevronBackOutline, chevronForwardOutline, logoUsd } from 'ionicons/icons';
 import { IonCard, IonCardContent, IonCardHeader, IonCardTitle } from '@ionic/angular/standalone';
+import { IonRippleEffect } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-branchs-operator',
@@ -10,7 +11,7 @@ import { IonCard, IonCardContent, IonCardHeader, IonCardTitle } from '@ionic/ang
   styleUrls: ['./branchs-operator.component.scss'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   standalone: true,
-  imports: [IonAvatar, IonCard, IonCardContent, IonCardHeader, IonCardTitle]
+  imports: [IonAvatar, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonRippleEffect]
 })
 export class BranchsOperatorComponent  implements OnInit {
   

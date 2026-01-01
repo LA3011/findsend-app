@@ -3,13 +3,15 @@ import { IonItem, IonLabel, IonList } from '@ionic/angular/standalone';
 import { IonAvatar } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { logoUsd, person } from 'ionicons/icons';
+import { IonRippleEffect } from '@ionic/angular/standalone';
+
 
 @Component({
   selector: 'app-transaction-operator',
   templateUrl: './transaction-operator.component.html',
   styleUrls: ['./transaction-operator.component.scss'],
   standalone: true,
-  imports: [IonItem, IonLabel, IonList, IonAvatar],
+  imports: [IonItem, IonLabel, IonList, IonAvatar, IonRippleEffect],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TransactionOperatorComponent  implements OnInit {
