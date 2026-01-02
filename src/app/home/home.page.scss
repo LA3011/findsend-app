@@ -23,10 +23,20 @@ h1 {
     margin: 0;
     font-weight: bold;
     font-size: xx-large;
+    color: aliceblue;
 }
 
 .title-secundary-bold {
     font-weight: bold;
     font-size: x-large;
     color: grey !important;
+}
+
+.splash {
+    margin: 0;
+    padding: 0;
+    border: .1px solid rgba(3, 3, 3, 0);
+    padding-bottom: 30px;
+    background-color: #0c72c9;
+    border-bottom-left-radius: 25%;
 }
