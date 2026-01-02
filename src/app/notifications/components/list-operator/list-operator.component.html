@@ -36,12 +36,12 @@
   <ion-modal mode="ios" style="--border-radius: 10px;" #modal [canDismiss]="canDismiss" [presentingElement]="page">
     <ng-template>
       
-      <ion-item>
-        <ion-label class="label-details">Detalles Transaccion</ion-label>
+      <ion-item color="dark">
+        <ion-label class="label-details">Detalle</ion-label>
         <ion-button color="danger" (click)="modal.dismiss()">X</ion-button>
       </ion-item>
 
-      <ion-content  class="ion-padding">
+      <ion-content color="dark" class="ion-padding">
         <p>Contenido del modal</p>
       </ion-content>
     </ng-template>

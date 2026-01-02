@@ -1,20 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Config
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Page Config</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="splash padding-5">
+    <div class="tilte-page">
+      <ion-text>
+        <h1 class="title-primary-bold">Configuracion</h1>
+      </ion-text>
+    </div>
+  </div>
 
-  <p>
-    Config
-  </p>
+  <ion-item lines="none" class="user-item">
+    <ion-avatar slot="start">
+      <img alt="avatar" src="../../assets/testing/photo-perfil.png" />
+    </ion-avatar>
+  
+    <div class="label-container">
+      <ion-label class="name">Luis Alvarez</ion-label>
+      <ion-label class="id">Operador - P1</ion-label>
+    </div>
+  </ion-item>
+
+  <div class="subtilte-page">
+    <ion-text>
+      <h1 class="subtitle-primary-bold">Tema</h1>
+    </ion-text>
+  </div>
+
+  <div class="content-toggle">
+    <ion-item lines="none">
+      <ion-toggle style="margin-left: 20px;" (ionChange)="toggleTheme($event)" color="success" mode="ios" justify="space-between">Claro / Oscuro</ion-toggle>
+    </ion-item>
+  </div>
+ 
+  <div class="subtilte-page">
+    <ion-text>
+      <h1 class="subtitle-primary-bold">Informacion Personal</h1>
+    </ion-text>
+  </div>
+
+  <ion-card mode="ios">
+    <ion-card-content>
+      <ion-item mode="ios" lines="none">
+        <ion-input labelPlacement="stacked" mode="ios" label="Nombre Usuario" value="LAlvarez" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-item mode="ios" lines="none">
+        <ion-input labelPlacement="stacked" mode="ios" label="Correo" value="LAlvarez@gmail.com" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-item mode="ios" lines="none">
+        <ion-input labelPlacement="stacked" mode="ios" label="Rol" value="Operador" [readonly]="true"></ion-input>
+      </ion-item>
+      <ion-item mode="ios" lines="none">
+        <ion-input labelPlacement="stacked" mode="ios" label="Identificador" value="P1" [readonly]="true"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  
 
 </ion-content>

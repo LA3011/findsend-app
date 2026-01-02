@@ -2,7 +2,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { IonAvatar, IonRouterLink } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { IonButton, IonIcon } from '@ionic/angular/standalone';
-import { notificationsOutline } from 'ionicons/icons';
+import { notifications, notificationsOutline } from 'ionicons/icons';
 import { IonBadge, IonItem, IonLabel, IonList } from '@ionic/angular/standalone';
 import { RouterLink } from '@angular/router';
 
@@ -17,7 +17,7 @@ import { RouterLink } from '@angular/router';
 export class HeaderOperatorComponent  implements OnInit {
 
   constructor() { 
-    addIcons({ notificationsOutline })
+    addIcons({ notifications })
   }
 
   ngOnInit() {}

@@ -34,4 +34,22 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';
+// @import '@ionic/angular/css/palettes/dark.system.css';
+@import '@ionic/angular/css/palettes/dark.class.css';
+
+:root{
+    --app-background-splash: linear-gradient(135deg, #006cca 0%, #5f99cc 100%);
+    --app-color-theme: #000000;
+    --app-color-theme-inver: #fffafa;
+    --app-color-dark: #000000;
+} 
+
+body.dark {
+    --app-color-theme: #fffafa;
+    --app-color-theme-inver: #000000;
+    --ion-background-color: var(--app-color-dark);
+    --ion-card-background: var(--app-color-dark);
+    --ion-item-background: var(--app-color-dark);
+    --ion-text-color: #fcf4f4;
+    --app-color: var(--app-color-dark);
+}
