@@ -7,14 +7,24 @@
     </ion-text>
   </div>
 
+  <div class="center-absolute">
+    <ion-avatar class="height-width-100">
+      <img alt="img-login" src="./../../assets/logos/remesas2026.jpg" />
+    </ion-avatar>
+  </div>
+
   <div style="padding: 20px;">
     <ion-label mode="ios">Ingrese Usuario</ion-label>
-    <ion-input style="--border-radius:10px;" label-placement="floating" fill="outline"></ion-input>
-    <br><br>  
+    <ion-input style="--highlight-color-focused: green; --border-radius:10px; margin-bottom: 10px;" label-placement="floating" fill="outline">
+      <ion-icon slot="start" name="person-outline" aria-hidden="true"></ion-icon>
+    </ion-input>
+    
     <ion-label mode="ios">Ingrese Clave</ion-label>
-    <ion-input style="--border-radius:10px;" label-placement="floating" fill="outline"></ion-input>
-    <br>
-    <ion-button routerLink="/tabs/findsend/home" style="--border-radius:15px;" expand="block">Ingresar</ion-button>
+    <ion-input style="--highlight-color-focused: green; --border-radius:10px;" label-placement="floating" fill="outline">
+      <ion-icon slot="start" name="lock-closed-outline" aria-hidden="true"></ion-icon>
+    </ion-input>
+    
+    <ion-button routerLink="/tabs/findsend/home" style="--border-radius:15px; margin-top: 20px;" expand="block">Ingresar</ion-button>
   </div>
 
 
