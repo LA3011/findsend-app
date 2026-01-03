@@ -1,5 +1,8 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { IonInput, IonAvatar, IonItem, IonLabel, IonToggle } from '@ionic/angular/standalone';
+import { RouterModule } from '@angular/router';
+import { IonInput, IonAvatar, IonItem, IonLabel, IonToggle, IonRouterLink } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { logOut, logOutOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-tab3',
@@ -7,10 +10,13 @@ import { IonInput, IonAvatar, IonItem, IonLabel, IonToggle } from '@ionic/angula
   styleUrls: ['config.page.scss'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   standalone: true,
-  imports: [IonInput, IonAvatar, IonItem, IonLabel, IonToggle],
+  imports: [IonInput, IonAvatar, IonItem, IonLabel, IonToggle, RouterModule],
 })
 export class ConfigPage implements OnInit{
-  constructor() {}
+
+  constructor() {
+    addIcons({ logOut, logOutOutline })
+  }
 
   toggleTheme(event: any) {
     const isDark = event.detail.checked;

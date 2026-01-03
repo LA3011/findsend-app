@@ -1,0 +1,32 @@
+.center-absolute {
+    display: flex;
+    justify-content: center;
+    /* horizontal */
+    align-items: center;
+    /* vertical */
+    height: 150px;
+    /* ocupa toda la pantalla */
+}
+ 
+.page-title {
+    margin: 0;
+    font-weight: bold;
+    color: #006cca;
+    font-size: 35px;
+}
+
+.splash {
+    margin: 0;
+    padding: 0;
+    border: .1px solid rgba(3, 3, 3, 0);
+    padding-bottom: 20px;
+    background: var(--app-background-splash);
+    box-shadow: 0 4px 6px -2px rgba(0,0,0,0.3);
+    border-bottom-left-radius: 25%;
+}
+
+.padding-5 {
+    height: 60px;
+    padding: 5%;
+    padding-bottom: 0%;
+}
