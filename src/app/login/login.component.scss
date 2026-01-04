@@ -1,5 +1,6 @@
 ion-label {
     font-weight: 400;
+    margin: 2px;
 }
 
 .center-absolute {
@@ -40,4 +41,13 @@ ion-label {
 
 ion-avatar {
     --border-radius: 4px;
+}
+
+.remesas {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: large;
+    margin: 20px;
 }

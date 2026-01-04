@@ -1,6 +1,12 @@
 <ion-content>
   <div class="splash padding-5"></div>
   
+  <div>
+    <ion-text>
+      <h1 class="remesas">Gestor Remesas</h1>
+    </ion-text>
+  </div>
+
   <div class="center-absolute">
     <ion-text>
       <h1 class="page-title">Iniciar Sesión</h1>
@@ -15,7 +21,7 @@
 
   <div style="padding: 20px;">
     <ion-label mode="ios">Ingrese Usuario</ion-label>
-    <ion-input style="--highlight-color-focused: green; --border-radius:10px; margin-bottom: 10px;" label-placement="floating" fill="outline">
+    <ion-input style="--highlight-color-focused: green; --border-radius:10px; margin-bottom: 11px;" label-placement="floating" fill="outline">
       <ion-icon slot="start" name="person-outline" aria-hidden="true"></ion-icon>
     </ion-input>
     
@@ -24,7 +30,7 @@
       <ion-icon slot="start" name="lock-closed-outline" aria-hidden="true"></ion-icon>
     </ion-input>
     
-    <ion-button routerLink="/tabs/findsend/home" style="--border-radius:15px; margin-top: 20px;" expand="block">Ingresar</ion-button>
+    <ion-button (click)="navHome()" style="--border-radius:15px; margin-top: 20px;" expand="block">Ingresar</ion-button>
   </div>
 
 

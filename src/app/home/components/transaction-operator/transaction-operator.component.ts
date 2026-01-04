@@ -11,7 +11,7 @@ import { IonCard } from '@ionic/angular/standalone';
   templateUrl: './transaction-operator.component.html',
   styleUrls: ['./transaction-operator.component.scss'],
   standalone: true,
-  imports: [IonItem, IonLabel, IonList, IonAvatar, IonRippleEffect, IonCard],
+  imports: [IonItem, IonLabel, IonList, IonAvatar, IonCard],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TransactionOperatorComponent  implements OnInit {
