@@ -21,11 +21,11 @@
         <ion-card-content (click)="openModalIcons(1)" style="padding: 8px;">
           <ion-ripple-effect></ion-ripple-effect>
           <ion-thumbnail class="content-thumbnail">
-            <img alt="Remesas" src="../../assets/logos/remesas2026.svg" />
+            <img alt="Remesas" src="../../assets/icon/order-icon.svg" />
           </ion-thumbnail>
         </ion-card-content>
       </ion-card>
-      <ion-text color="dark">
+      <ion-text>
         <small class="small-text-icon">Enviar</small>
       </ion-text>
     </div>
@@ -34,11 +34,11 @@
         <ion-card-content (click)="openModalIcons(1)" style="padding: 8px;">
           <ion-ripple-effect></ion-ripple-effect>
           <ion-thumbnail class="content-thumbnail">
-            <img alt="Remesas" src="../../assets/logos/remesas2026.svg" />
+            <img alt="Remesas" src="../../assets/icon/money-icon.svg" />
           </ion-thumbnail>
         </ion-card-content>
       </ion-card>
-      <ion-text color="dark">
+      <ion-text>
         <small class="small-text-icon">Pagar</small>
       </ion-text>
     </div>
@@ -47,11 +47,11 @@
         <ion-card-content (click)="openModalIcons(1)" style="padding: 8px;">
           <ion-ripple-effect></ion-ripple-effect>
           <ion-thumbnail class="content-thumbnail">
-            <img alt="Remesas" src="../../assets/logos/remesas2026.svg" />
+            <img alt="Remesas" src="../../assets/icon/solicitud-icon.svg" />
           </ion-thumbnail>
         </ion-card-content>
       </ion-card>
-      <ion-text color="dark">
+      <ion-text>
         <small class="small-text-icon">Solicitar</small>
       </ion-text>
     </div>
@@ -60,11 +60,11 @@
         <ion-card-content (click)="openModalIcons(1)" style="padding: 8px;">
           <ion-ripple-effect></ion-ripple-effect>
           <ion-thumbnail class="content-thumbnail">
-            <img alt="Remesas" src="../../assets/logos/remesas2026.svg" />
+            <img alt="Remesas" src="../../assets/icon/deposit-icon.svg" />
           </ion-thumbnail>
         </ion-card-content>
       </ion-card>
-      <ion-text color="dark">
+      <ion-text>
         <small class="small-text-icon">Depositar</small>
       </ion-text>
     </div>
@@ -73,12 +73,12 @@
   <ion-modal #modalIcons mode="ios" style="--border-radius: 10px;" [canDismiss]="canDismiss" [presentingElement]="pageContainer">
     <ng-template>
 
-      <ion-item color="dark">
+      <ion-item>
         <ion-label class="label-details">Detalles Accion</ion-label>
         <ion-button color="danger" (click)="modalIcons.dismiss()">X</ion-button>
       </ion-item>
 
-      <ion-content color="dark" class="ion-padding">
+      <ion-content class="ion-padding">
         <p>Contenido del modal</p>
       </ion-content>
     </ng-template>
@@ -133,12 +133,12 @@
     <ion-modal mode="ios" style="--border-radius: 10px;" #modal [canDismiss]="canDismiss" [presentingElement]="page">
       <ng-template>
 
-        <ion-item color="dark">
+        <ion-item>
           <ion-label class="label-details">Detalles Transaccion</ion-label>
           <ion-button color="danger" (click)="modal.dismiss()">X</ion-button>
         </ion-item>
 
-        <ion-content color="dark" class="ion-padding">
+        <ion-content class="ion-padding">
           <p>Contenido del modal</p>
         </ion-content>
       </ng-template>

@@ -1,7 +1,7 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { IonCard, IonRippleEffect, IonThumbnail, IonModal } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { search } from 'ionicons/icons';
+import { search, swapVertical } from 'ionicons/icons';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class OrderPage  implements OnInit {
   pageContainer!: ElementRef;
 
   constructor() { 
-    addIcons({ search })
+    addIcons({ search, swapVertical })
   }
 
   openModalIcons(item: any) {
